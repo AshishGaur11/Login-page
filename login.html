@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        login
+    </title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/9c70741414.js"></script>
+
+    <style>
+        
+    .login-wrap 
+    {
+    width: 100%;
+    margin: 75px auto;
+    max-width: 350px;
+    min-height: 575px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    }
+    .login-html 
+    {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 35px 40px 40px 40px;
+    background: #ffffffc2;
+    border-radius: 5px;
+    color: #5e5e5e;
+    }
+
+    body 
+    {
+    margin: 0;
+    background-image: url(bg-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+    .login-form 
+    {
+    min-height: 345px;
+    position: relative;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    }
+    .inpt
+    {
+        padding: 5px 10px 5px 10px;
+        margin: 10px -10px;
+        width: 100%;
+        border-radius: 20px;
+        border-color: rgb(0 0 0 / 11%);
+        font-family:  FontAwesome, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .loginbutton
+    {   
+        color: white;
+        border-radius: 21px;
+        background: linear-gradient(45deg, #dd2d00, #691779);
+        width: 130px;
+        margin-bottom: 10px;
+        border: none;
+        padding: 7px 7px 5px 7px;
+    
+    }
+    .loginbutton:hover
+    {
+        box-shadow: 1px 5px 16px #000000a8;;
+    }
+    h3
+    {
+        
+        display: grid;
+        grid-template-columns: 4fr auto 4fr;
+        grid-template-rows: 15px 0;
+        grid-gap: 10px;
+        font-size: 25px;
+    }
+
+    h3:after,h3:before 
+    {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #00000059 ;
+    }
+    .fosm
+    {
+        background-color: rgb(58, 59, 255);
+        padding: 10px 15px 10px 15px;
+        border-radius: 5px;
+        color: white;
+    }
+    .fosm1
+    {
+        background-color: rgb(255, 58, 58);
+        padding: 10px 15px 10px 15px;
+        border-radius: 5px;
+        color: white;
+        text-align: left;
+    }
+    .fosm1:hover
+    {
+        background-color: rgb(252, 0, 0);
+        box-shadow: 1px 5px 16px #000000a8;
+
+        color: white;
+    }
+    .fosm:hover
+    {
+        background-color: rgb(0, 0, 255);
+        box-shadow: 1px 5px 16px #000000a8;
+        color: white;
+    }
+    p 
+    {
+    margin: 35px 0 10px;
+    font-size: 11px;
+    }
+    .h5, h5 
+    {
+    font-size: 21px;
+    }
+    </style>
+</head>
+<body>
+    <div class="login-wrap">
+        <div class="login-html">
+            <form>
+                <center>
+                <b><h5>Welcome!</h5></b>
+                <h6 style="margin-top: -5px;">Log into your existing account via E-mail</h6>                           
+                <input class="inpt" type="text" placeholder=" &#xf2c0;  Enter email " required>
+                <br>
+                <input class="inpt"  type="Password"  placeholder=" &#xf084;  Password" required style="margin-top: 0px;">
+                <br>
+                <div class="row">
+                    <div class="col-xs-6">
+                    <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+                    <label for="user_remember_me">Remember me</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <a  href="#">Forgot Password?</a>
+                    </div>
+                </div>  
+                <br>
+                <input type="submit" class="loginbutton loginbox" name="" value="LOG IN">
+                <br>
+                
+                <a href="#">Sign up via Email</a>
+                <h3>or</h3>
+            <h6 style="font-size: 14px; padding: 15px 0 10px;">Connect Using</h6>
+
+            <div class="row">
+                <div class="col-xs-6" style="text-align: right; padding-right: 5px;">
+                    <a class="fosm" href="#" style="text-decoration: none;">
+                        <i class="fa fa-facebook" ></i> &nbsp;Facebook
+                    </a>
+                </div>
+                <div class="col-xs-6" style="text-align: left; padding-left: 5px;">
+                    <a class="fosm1" href="#" style="text-decoration: none;">
+                        <i class="fa fa-google" ></i> &nbsp;Google
+                    </a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        If you are not already a Vibrnz member, using social login will automatically sign you up as member. 
+                        By signing up, you agree to the Vibrnz Terms and acknowledge that you have read our Privacy Policy
+
+                    </p>
+                </div>
+            </div>
+
+                </center>
+            </form>
+            
+        </div>
+    </div>
+
+</body>
+</html>
